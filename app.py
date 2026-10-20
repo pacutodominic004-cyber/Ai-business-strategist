@@ -20,7 +20,7 @@ if st.button("Generate Strategy"):
     if business_desc:
         with st.spinner("Analyzing your business model..."):
             try:
-                model = genai.GenerativeModel('gemini-2.5-flash')
+                model = genai.GenerativeModel('gemini-3.8-flash')
                 prompt = f"""
                 Act as an expert business consultant. I have the following business operation: {business_desc}. 
                 Please provide:
